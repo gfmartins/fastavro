@@ -13,6 +13,7 @@ from setuptools import Extension
 # publish.sh should set this variable to 1.
 try:
     USE_CYTHON = int(os.getenv('FASTAVRO_USE_CYTHON'))
+    print("-- USING CYTHON ---")
 except TypeError:
     USE_CYTHON = False
 
