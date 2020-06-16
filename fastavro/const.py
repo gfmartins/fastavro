@@ -17,4 +17,4 @@ DAYS_SHIFT = datetime.date(1970, 1, 1).toordinal()
 INT_MIN_VALUE = -(1 << 31)
 INT_MAX_VALUE = (1 << 31) - 1
 LONG_MIN_VALUE = -(1 << 63)
-LONG_MAX_VALUE = np.iinfo(np.ulonglong).max #(1 << 63) - 1
+LONG_MAX_VALUE = (1 << 63) - 1
