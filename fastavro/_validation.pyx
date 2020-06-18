@@ -65,7 +65,7 @@ cdef inline bint validate_long(datum, schema=None,
                                str parent_ns='', bint raise_errors=True):
     return (
         (isinstance(datum, (int, long, numbers.Integral))
-         and LONG_MIN_VALUE <= datum
+         and LONG_MIN_VALUE <= datum <= LONG_MAX_VALUE
          and not isinstance(datum, bool))
         or isinstance(datum, (datetime.time, datetime.datetime, datetime.date))
     )
